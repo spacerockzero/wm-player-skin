@@ -1,4 +1,5 @@
-<!-- Copyright (C) Jakob Anderson. All rights reserved. -->
+<!-- Copyright (C) Jakob Anderson. All rights reserved. 
+    Dieter Rams - inspired Minimalist radio skin -->
 <THEME
     author = "Jakob Anderson"
     copyright = "Jakob Anderson">
@@ -33,6 +34,13 @@
                 accName = "Next Track Button"
                 mappingColor = "#0000FF" />
         </BUTTONGROUP>
+
+        <VIDEO
+            tabStop = "false"
+            top = "45"
+            left = "15"
+            width = "480"
+            height = "360" />
 
     </VIEW>
 
