@@ -1,0 +1,40 @@
+<!-- Copyright (C) Jakob Anderson. All rights reserved. -->
+<THEME
+    author = "Jakob Anderson"
+    copyright = "Jakob Anderson">
+    <VIEW
+        clippingColor = "#000000"
+        backgroundImage = "skin_base.gif"
+        titleBar = "false">
+
+       <BUTTONGROUP
+            mappingImage  = "buttons_mask.gif"
+            hoverImage    = "buttons_hover.gif" 
+            disabledImage = "buttons_inactive.gif"
+            cursor = "hand" >
+            <PLAYELEMENT
+                mappingColor = "#00FF00"
+                accKeyboardShortcut = "CTRL+P"
+                accName = "Play Button" />
+            <PAUSEELEMENT
+                mappingColor = "#FF00FF"
+                accKeyboardShortcut = "CTRL+P"
+                accName = "Pause Button" />
+            <STOPELEMENT
+                mappingColor = "#FF0000"
+                accKeyboardShortcut = "CTRL+S"
+                accName = "Stop Button" />             
+            <PREVELEMENT
+                accKeyboardShortcut = "CTRL+B"
+                accName = "Previous Track Button"
+                mappingColor = "#FFF000" />
+            <NEXTELEMENT
+                accKeyboardShortcut = "CTRL+F"
+                accName = "Next Track Button"
+                mappingColor = "#0000FF" />
+        </BUTTONGROUP>
+
+    </VIEW>
+
+</THEME>
+
