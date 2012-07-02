@@ -67,6 +67,16 @@
 
         </BUTTONGROUP>
 
+        <text 
+            left="230" 
+            top="135" 
+            width="300"
+            tooltip="Current Media" 
+            foregroundColor="#6f6f6f" 
+            fontSize="12"
+            value="wmpprop:player.currentMedia.name">
+        </text>
+
     </VIEW>
 
 </THEME>
