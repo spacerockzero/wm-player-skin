@@ -5,13 +5,13 @@
     copyright = "Jakob Anderson">
     <VIEW
         clippingColor = "#000000"
-        backgroundImage = "skin_base.gif"
+        backgroundImage = "skin-default.png"
         titleBar = "false">
 
        <BUTTONGROUP
-            mappingImage  = "buttons_mask.gif"
-            hoverImage    = "buttons_hover.gif" 
-            disabledImage = "buttons_inactive.gif"
+            mappingImage  = "buttons-mask.gif"
+            hoverImage    = "buttons-hover.png" 
+            disabledImage = "buttons-inactive.png"
             cursor = "hand" >
             
             <PLAYELEMENT
@@ -59,6 +59,11 @@
                 mappingColor = "#7eff00"
                 upToolTip = "Close"
                 onClick = "JScript: view.close(); " />
+
+            <BUTTONELEMENT
+                mappingColor = "#a800ff"
+                upToolTip = "Open a new file or playlist"
+                onClick = "JScript:player.URL=theme.openDialog('FILE_OPEN','FILES_ALL');"/>
 
         </BUTTONGROUP>
 
