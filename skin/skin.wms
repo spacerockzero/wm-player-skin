@@ -13,34 +13,54 @@
             hoverImage    = "buttons_hover.gif" 
             disabledImage = "buttons_inactive.gif"
             cursor = "hand" >
+            
             <PLAYELEMENT
                 mappingColor = "#00FF00"
                 accKeyboardShortcut = "CTRL+P"
-                accName = "Play Button" />
+                accName = "Play Button" 
+                onClick="player.controls.play()" 
+                upToolTip="Play" cursor="hand"/>
+            
             <PAUSEELEMENT
                 mappingColor = "#FF00FF"
                 accKeyboardShortcut = "CTRL+P"
-                accName = "Pause Button" />
+                accName = "Pause Button" 
+                onClick="player.controls.pause()" 
+                upToolTip="Pause" cursor="hand"/>
+            
             <STOPELEMENT
                 mappingColor = "#FF0000"
                 accKeyboardShortcut = "CTRL+S"
-                accName = "Stop Button" />             
+                accName = "Stop Button" 
+                onClick="player.controls.stop()" 
+                upToolTip="Stop"/>             
+            
             <PREVELEMENT
                 accKeyboardShortcut = "CTRL+B"
                 accName = "Previous Track Button"
                 mappingColor = "#FFF000" />
+            
             <NEXTELEMENT
                 accKeyboardShortcut = "CTRL+F"
                 accName = "Next Track Button"
                 mappingColor = "#0000FF" />
-        </BUTTONGROUP>
+                          
+            <BUTTONELEMENT
+                mappingColor = "#f6ff00"
+                upToolTip = "Minimize"
+                onClick = "JScript: view.minimize(); " />
+            
+            <BUTTONELEMENT
+                mappingColor = "#baff00"
+                upToolTip = "Return to Full View"
+                onClick = "JScript: view.returnToMediaCenter(); " />
+            
+            <BUTTONELEMENT
+                mappingColor = "#7eff00"
+                upToolTip = "Close"
+                onClick = "JScript: view.close(); " />
 
-        <VIDEO
-            tabStop = "false"
-            top = "45"
-            left = "15"
-            width = "480"
-            height = "360" />
+        </BUTTONGROUP>
 
     </VIEW>
 
